@@ -18,31 +18,30 @@ int main(int argc, const char * argv[]) {
     
     
     struct node *head = NULL;
-    head = insertAtEnd(head, 1);
-    head = insertAtEnd(head, 2);
-    head = insertAtEnd(head, 3);
-    head = insertAtEnd(head, 4);
-    head = insertAtEnd(head, 5);
+    head = insertAtEnd(head, 1);  // 1
+    head = insertAtEnd(head, 2);  // 1->2
+    head = insertAtEnd(head, 3);  // 1->2->3
+    head = insertAtEnd(head, 4);  // 1->2->3->4
+    head = insertAtEnd(head, 5);  // 1->2->3->4->5
     print(head);
     
-    head = insertAtPosition(head, 3, 9);
+    head = insertAtPosition(head, 3, 9);  // 1->2->9->3->4->5
     print(head);
     
-    head = insertAtBeginning(head, 7);
+    head = insertAtBeginning(head, 7);  // 7->1->2->9->3->4->5
     print(head);
     
-    head = deleteAtBeginning(head);
+    head = deleteAtBeginning(head);  // 1->2->9->3->4->5
     print(head);
     
-    head = deleteAtPosition(head, 3);
+    head = deleteAtPosition(head, 3);  // 1->2->3->4->5
     print(head);
     
-    head = deleteAtEnd(head);
-    head = deleteAtEnd(head);
-    head = deleteAtEnd(head);
-    head = deleteAtEnd(head);
-    head = deleteAtEnd(head);
-    head = deleteAtEnd(head);
+    head = deleteAtEnd(head);  // 1->2->3->4
+    head = deleteAtEnd(head);  // 1->2->3
+    head = deleteAtEnd(head);  // 1->2
+    head = deleteAtEnd(head);  // 1
+    head = deleteAtEnd(head);  // NULL
     print(head);
     
     

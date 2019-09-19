@@ -4,7 +4,7 @@
 //
 //  Created by Apple 1 on 12/04/19.
 //  Copyright © 2019 3B1B. All rights reserved.
-//
+// git as VCS
 
 #include "LL.h"
 #include <stdio.h>
